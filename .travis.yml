@@ -4,6 +4,8 @@ python:
 install:
   - pip install -e .
   - pip install pytest-cov codecov # Install packages for code coverage report.
+  - name: Codecov
+    uses: codecov/codecov-action@v1.5.2
 script:
   - pytest --cov=src tests # Point to the source directory. This will run the test and produce a coverage report.
 after_success:
