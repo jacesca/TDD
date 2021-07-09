@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.com/jacesca/TDD.svg?branch=master)](https://travis-ci.com/jacesca/TDD)
-[![codecov](https://codecov.io/jacesca/TDD./branch/master/graph/badge.svg)](https://codecov.io/jacesca/TDD)
+[![codecov](https://codecov.io/gh/jacesca/TDD/branch/master/graph/badge.svg?token=7AJI9N45U3)](https://codecov.io/gh/jacesca/TDD)
 
 This repository holds the code for the DataCamp course [Unit Testing for Data Science in Python by Dibya Chakravorty](https://www.datacamp.com/courses/unit-testing-for-data-science-in-python). 
 
