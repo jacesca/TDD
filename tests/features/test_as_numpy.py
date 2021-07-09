@@ -1,4 +1,3 @@
-
 import pytest
 
 from features.as_numpy import get_data_as_numpy_array
