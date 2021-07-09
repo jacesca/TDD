@@ -1,0 +1,10 @@
+language: python
+python:
+  - "3.8.8"
+install:
+  - pip install -e .
+  - pip install pytest-cov codecov # Install packages for code coverage report.
+script:
+  - pytest --cov=src tests # Point to the source directory. This will run the test and produce a coverage report.
+after_success:
+  - codecov # This makes Travis.CI push the code coverage results to Codecov after every build.
