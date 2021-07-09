@@ -4,14 +4,13 @@ import os
 from data.preprocessing_helpers import convert_to_int, row_to_list, preprocess
 
 @pytest.fixture
-def raw_and_clean_data_file():
-    raw_data_file_path = "raw.txt"
-    clean_data_file_path = "clean.txt"
+def raw_and_clean_data_file(tmpdir):
+    raw_data_file_path = tmpdir.join("raw.txt")
+    clean_data_file_path = tmpdir.join("clean.txt")
     with open(raw_data_file_path, "w") as f: 
         f.write("1,801\t201,411\n1,767565,112\n2,002\t333,209\n1990\t782,911\n1,285\t389129\n")
     yield raw_data_file_path, clean_data_file_path
-    os.remove(raw_data_file_path) 
-    os.remove(clean_data_file_path)
+    # No teardown code necessary
 
 
 class TestConvertToInt(object):
