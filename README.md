@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.com/jacesca/TDD.svg?branch=master)](https://travis-ci.com/jacesca/TDD)
 [![codecov](https://codecov.io/gh/jacesca/TDD/branch/master/graph/badge.svg?token=7AJI9N45U3)](https://codecov.io/gh/jacesca/TDD)
 
-This repository holds the code for the DataCamp course [Unit Testing for Data Science in Python by Dibya Chakravorty](https://www.datacamp.com/courses/unit-testing-for-data-science-in-python). 
+This repository holds my own developed test base on the code for the DataCamp course [Unit Testing for Data Science in Python by Dibya Chakravorty](https://www.datacamp.com/courses/unit-testing-for-data-science-in-python). 
 
 Please make sure that you have installed the package `univariate_linear_regression` in this repo using `pip` before running `pytest`. Otherwise, you may get `ImportError`s.
 
