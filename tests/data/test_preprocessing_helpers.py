@@ -76,7 +76,7 @@ class TestPreprocess(object):
         raw_path, clean_path = raw_and_clean_data_file 
         preprocess(raw_path, clean_path)
         
-        with open(clean_path) as f: 
+        with open(clean_path, 'r') as f: 
             lines = f.readlines() 
         
         assert lines[0] == "1801\t201411\n" # Compare first_line
