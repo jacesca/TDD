@@ -13,11 +13,10 @@ def clean_data_file():
 	os.remove(file_path)
 
 @pytest.fixture
-def empty_file():
-    file_path = "empty.txt"
+def empty_file(tmpdir):
+    file_path = tmpdir.join("empty.txt")
     open(file_path, "w").close()
     yield file_path
-    os.remove(file_path)
     
 
 class TestGetDataAsNumpyArray(object):
